@@ -19,6 +19,6 @@
   
   .animate-gradient-text {
     background-size: 200% 200%;
-    animation: gradient-text 3s ease infinite alternate;
+    animation: gradient-text 2s ease infinite alternate;
   }
   
