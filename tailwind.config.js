@@ -4,7 +4,9 @@ export default {
     "./index.html",
     "./**/*{.js}",
   ],
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
   theme: {
     extend: {
       fontFamily: {

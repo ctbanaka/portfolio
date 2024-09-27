@@ -103,56 +103,242 @@
 
       <section
         id="aboutme"
-        class="flex justify-center items-center h-screen p-10 md:p-50 bg-gray-950"
+        class="flex justify-center items-center p-2 md:p-11 h-screen bg-gray-50"
       >
+      <div class="md:w-11/12 h-[90%] bg-gray-200 rounded-2xl grid place-items-center">
         <p
-          id="para"
-          class="text-2xl md:text-4xl md:px-16 text-wrap text-white/80"
-        >
-          I'm a passionate fullstack developer with expertise in modern web
-          technologies. My goal is to create efficient, scalable, and
-          user-friendly applications that solve real-world problems.
-        </p>
+        id="para"
+        class="text-2xl md:text-4xl p-2 md:p-16 text-start text-black/80"
+      >
+        I'm a passionate fullstack developer with expertise in modern web
+        technologies. My goal is to create efficient, scalable, and
+        user-friendly applications that solve real-world problems.
+      </p>
+      </div>
+      
       </section>
 
       <section
-      id="skills"
-      class="flex flex-col justify-center items-center gap-8 min-h-screen p-10 bg-gray-950 text-white"
-    >
-      <h2 class="self-start text-7xl font-bold underline decoration-4 decoration-purple-600">
-        Skills
-      </h2>
-      <div class="self-center flex flex-wrap gap-6 justify-center max-w-5xl">
-        <div class="px-8 py-3 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out">
-          JavaScript
+        id="skills"
+        class="flex flex-col justify-center items-center gap-6 md:gap-20 min-h-screen px-6 md:p-10 bg-gray-50 text-black/90"
+      >
+        <h2 class="text-4xl md:text-6xl text-black/80  font-bold">Skills</h2>
+        <div
+          id="skills-container"
+          class="self-center flex flex-row flex-wrap gap-1 md:gap-2 justify-center items-center md:px-60"
+        >
+          <div
+            class="skill-item px-2 md:px-8 py-2 border border-black/50 rounded-full text-center bg-black/10 hover:bg-white/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          >
+            <img
+              class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
+              alt="Java"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij4KPHBhdGggZmlsbD0iI0Y0NDMzNiIgZD0iTTIzLjY1LDI0Ljg5OGMtMC45OTgtMS42MDktMS43MjItMi45NDMtMi43MjUtNS40NTVDMTkuMjI5LDE1LjIsMzEuMjQsMTEuMzY2LDI2LjM3LDMuOTk5YzIuMTExLDUuMDg5LTcuNTc3LDguMjM1LTguNDc3LDEyLjQ3M0MxNy4wNywyMC4zNywyMy42NDUsMjQuODk4LDIzLjY1LDI0Ljg5OHoiPjwvcGF0aD48cGF0aCBmaWxsPSIjRjQ0MzM2IiBkPSJNMjMuODc4LDE3LjI3Yy0wLjE5MiwyLjUxNiwyLjIyOSwzLjg1NywyLjI5OSw1LjY5NWMwLjA1NiwxLjQ5Ni0xLjQ0NywyLjc0My0xLjQ0NywyLjc0M3MyLjcyOC0wLjUzNiwzLjU3OS0yLjgxOGMwLjk0NS0yLjUzNC0xLjgzNC00LjI2OS0xLjU0OC02LjI5OGMwLjI2Ny0xLjkzOCw2LjAzMS01LjU0Myw2LjAzMS01LjU0M1MyNC4zMTEsMTEuNjExLDIzLjg3OCwxNy4yN3oiPjwvcGF0aD48Zz48cGF0aCBmaWxsPSIjMTU2NUMwIiBkPSJNMzIuMDg0IDI1LjA1NWMxLjc1NC0uMzk0IDMuMjMzLjcyMyAzLjIzMyAyLjAxIDAgMi45MDEtNC4wMjEgNS42NDMtNC4wMjEgNS42NDNzNi4yMjUtLjc0MiA2LjIyNS01LjUwNUMzNy41MjEgMjQuMDUzIDM0LjQ2NCAyMy4yNjYgMzIuMDg0IDI1LjA1NXpNMjkuMTI5IDI3LjM5NWMwIDAgMS45NDEtMS4zODMgMi40NTgtMS45MDItNC43NjMgMS4wMTEtMTUuNjM4IDEuMTQ3LTE1LjYzOC4yNjkgMC0uODA5IDMuNTA3LTEuNjM4IDMuNTA3LTEuNjM4cy03Ljc3My0uMTEyLTcuNzczIDIuMTgxQzExLjY4MyAyOC42OTUgMjEuODU4IDI4Ljg2NiAyOS4xMjkgMjcuMzk1eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMxNTY1QzAiIGQ9Ik0yNy45MzUsMjkuNTcxYy00LjUwOSwxLjQ5OS0xMi44MTQsMS4wMi0xMC4zNTQtMC45OTNjLTEuMTk4LDAtMi45NzQsMC45NjMtMi45NzQsMS44ODljMCwxLjg1Nyw4Ljk4MiwzLjI5MSwxNS42MywwLjU3MkwyNy45MzUsMjkuNTdxeiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMxNTY1QzAiIGQ9Ik0xOC42ODYsMzIuNzM5Yy0xLjYzNiwwLTIuNjk1LDEuMDU0LTIuNjk1LDEuODIyYzAsMi4zOTEsOS43NiwyLjYzMiwxMy42MjcsMC4yMDVsLTIuNDU4LTEuNjMyQzI0LjI3MSwzNC40MDQsMTcuMDE0LDM0LjU3OSwxOC42ODYsMzIuNzM5eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMxNTY1QzAiIGQ9Ik0zNi4yODEsMzYuNjMyYzAtMC45MzYtMS4wNTUtMS4zNzctMS40MzMtMS41ODhjMi4yMjgsNS4zNzMtMjIuMzE3LDQuOTU2LTIyLjMxNywxLjc4NGMwLTAuNzIxLDEuODA3LTEuNDI3LDMuNDc3LTEuMDkzbC0xLjQyLTAuODM5QzExLjI2LDM0LjM3NCw5LDM1LjgzNyw5LDM3LjAxN0M5LDQyLjUyLDM2LjI4MSw0Mi4yNTUsMzYuMjgxLDM2LjYzMnoiPjwvcGF0aD48L2c+Cjwvc3ZnPg=="
+            />
+            <span>Java</span>
+          </div>
+
+          <div
+            class="skill-item  px-2 md:px-8 py-2 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          >
+            <img
+              class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
+              alt="Angular"
+              src="./public/angular.svg"
+            />
+            <span>Angular</span>
+          </div>
+
+          <div
+            class="skill-item px-2 md:px-8 py-2 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          >
+            <img
+              class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
+              alt="svgImg"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiMzODhlM2MiIGQ9Ik0xNy4yMDQgMTkuMTIybC00LjkwNyAyLjcxNUMxMi4xMTMgMjEuOTM4IDEyIDIyLjEyNiAxMiAyMi4zMjl2NS40MzNjMCAuMjAzLjExMy4zOS4yOTcuNDkybDQuOTA4IDIuNzE3Yy4xODMuMTAxLjQxLjEwMS41OTMgMGw0LjkwNy0yLjcxN0MyMi44ODcgMjguMTUyIDIzIDI3Ljk2NSAyMyAyNy43NjJ2LTUuNDMzYzAtLjIwMy0uMTEzLS4zOS0uMjk3LS40OTJsLTQuOTA2LTIuNzE1Yy0uMDkyLS4wNTEtLjE5NS0uMDc2LS4yOTctLjA3Ni0uMTAzIDAtLjIwNS4wMjUtLjI5Ny4wNzZNNDIuNDUxIDI0LjAxM2wtLjgxOC40NTJjLS4wMzEuMDE3LS4wNDkuMDQ4LS4wNDkuMDgydi45MDZjMCAuMDM0LjAxOS4wNjUuMDQ5LjA4MmwuODE4LjQ1M2MuMDMxLjAxNy4wNjguMDE3LjA5OSAwbC44MTgtLjQ1M2MuMDMtLjAxNy4wNDktLjA0OC4wNDktLjA4MnYtLjkwNmMwLS4wMzQtLjAxOS0uMDY1LS4wNS0uMDgybC0uODE4LS40NTJDNDIuNTM0IDI0LjAwNCA0Mi41MTcgMjQgNDIuNSAyNFM0Mi40NjYgMjQuMDA0IDQyLjQ1MSAyNC4wMTMiPjwvcGF0aD48cGF0aCBmaWxsPSIjMzc0NzRmIiBkPSJNMzUuNzUxLDEzLjM2NGwtMi4zODktMS4zMzNjLTAuMDc1LTAuMDQyLTAuMTY3LTAuMDQxLTAuMjQxLDAuMDAzIGMtMC4wNzQsMC4wNDQtMC4xMiwwLjEyMy0wLjEyLDAuMjA5TDMzLDIwLjI5NWwtMi4yMDMtMS4yMTlDMzAuNzA1LDE5LjAyNSwzMC42MDIsMTksMzAuNSwxOWMtMC4xMDIsMC0wLjIwNSwwLjAyNS0wLjI5NywwLjA3NiBoMC4wMDFsLTQuOTA3LDIuNzE1QzI1LjExMywyMS44OTIsMjUsMjIuMDgsMjUsMjIuMjgydjUuNDMzYzAsMC4yMDMsMC4xMTMsMC4zOSwwLjI5NywwLjQ5Mmw0LjkwOCwyLjcxNyBjMC4xODMsMC4xMDEsMC40MSwwLjEwMSwwLjU5MywwbDQuOTA3LTIuNzE3QzM1Ljg4NywyOC4xMDYsMzYsMjcuOTE4LDM2LDI3LjcxNVYxMy43ODhDMzYsMTMuNjEyLDM1LjkwNCwxMy40NSwzNS43NTEsMTMuMzY0eiBNMzIuODY2LDI2LjQ1OGwtMi4yMywxLjIzNWMtMC4wODMsMC4wNDYtMC4xODYsMC4wNDYtMC4yNjksMGwtMi4yMzEtMS4yMzVDMjguMDUxLDI2LjQxMiwyOCwyNi4zMjYsMjgsMjYuMjM0di0yLjQ3IGMwLTAuMDkyLDAuMDUxLTAuMTc3LDAuMTM1LTAuMjI0bDIuMjMxLTEuMjM0aC0wLjAwMWMwLjA0Mi0wLjAyMywwLjA4OC0wLjAzNCwwLjEzNS0wLjAzNGMwLjA0NywwLDAuMDkzLDAuMDEyLDAuMTM1LDAuMDM0IGwyLjIzLDEuMjM0QzMyLjk0OSwyMy41ODcsMzMsMjMuNjczLDMzLDIzLjc2NXYyLjQ3QzMzLDI2LjMyNiwzMi45NDksMjYuNDEyLDMyLjg2NiwyNi40NTh6Ij48L3BhdGg+PHBhdGggZmlsbD0iIzJlN2QzMiIgZD0iTTE3LjIwNCwxOS4xMjJMMTIsMjcuNzYyYzAsMC4yMDMsMC4xMTMsMC4zOSwwLjI5NywwLjQ5Mmw0LjkwOCwyLjcxNyBjMC4xODMsMC4xMDEsMC40MSwwLjEwMSwwLjU5MywwTDIzLDIyLjMyOWMwLTAuMjAzLTAuMTEzLTAuMzktMC4yOTctMC40OTJsLTQuOTA2LTIuNzE1Yy0wLjA5Mi0wLjA1MS0wLjE5NS0wLjA3Ni0wLjI5Ny0wLjA3NiBjLTAuMTAzLDAtMC4yMDUsMC4wMjUtMC4yOTcsMC4wNzYiPjwvcGF0aD48cGF0aCBmaWxsPSIjNGNhZjUwIiBkPSJNMTcuMjA0LDE5LjEyMmwtNC45MDcsMi43MTVDMTIuMTEzLDIxLjkzOCwxMiwyMi4xMjYsMTIsMjIuMzI5bDUuMjA0LDguNjQyIGMwLjE4MywwLjEwMSwwLjQxLDAuMTAxLDAuNTkzLDBsNC45MDctMi43MTdDMjIuODg3LDI4LjE1MiwyMywyNy45NjUsMjMsMjcuNzYybC01LjIwMy04LjY0Yy0wLjA5Mi0wLjA1MS0wLjE5NS0wLjA3Ni0wLjI5Ny0wLjA3NiBjLTAuMTAzLDAtMC4yMDUsMC4wMjUtMC4yOTcsMC4wNzYiPjwvcGF0aD48cGF0aCBmaWxsPSIjMzc0NzRmIiBkPSJNNDcuNzAzIDIxLjc5MWwtNC45MDYtMi43MTVDNDIuNzA1IDE5LjAyNSA0Mi42MDIgMTkgNDIuNSAxOWMtLjEwMiAwLS4yMDUuMDI1LS4yOTcuMDc2aC4wMDFsLTQuOTA3IDIuNzE1QzM3LjExNCAyMS44OTIgMzcgMjIuMDg0IDM3IDIyLjI5NHY1LjQxMWMwIC4yMDkuMTE0LjQwMi4yOTcuNTAzbDQuOTA4IDIuNzE3Yy4xODQuMTAyLjQwOS4xMDIuNTkzIDBsMi4yNjMtMS4yNTNjLjIwNy0uMTE1LjIwNi0uNDEyLS4wMDItLjUyNmwtNC45MjQtMi42ODdDNDAuMDUyIDI2LjQxMiA0MCAyNi4zMjUgNDAgMjYuMjMxdi0yLjQ2NmMwLS4wOTIuMDUtLjE3Ny4xMy0uMjIxbDIuMjM1LTEuMjM2aC0uMDAxYy4wNDItLjAyMy4wODgtLjAzNC4xMzUtLjAzNC4wNDcgMCAuMDkzLjAxMi4xMzUuMDM0bDIuMjM1IDEuMjM3Yy4wOC4wNDQuMTMuMTI5LjEzLjIyMXYyLjAxMmMwIC4wODYuMDQ2LjE2Ni4xMjEuMjA5LjA3NS4wNDIuMTY3LjA0Mi4yNDItLjAwMWwyLjM5OC0xLjM5M2MuMTQ4LS4wODYuMjQtLjI0NS4yNC0uNDE3di0xLjg4QzQ4IDIyLjA4NSA0Ny44ODYgMjEuODkyIDQ3LjcwMyAyMS43OTF6TTEwLjcwMyAyMS43OTFsLTQuOTA2LTIuNzE1QzUuNzA1IDE5LjAyNSA1LjYwMiAxOSA1LjUgMTljLS4xMDIgMC0uMjA1LjAyNS0uMjk3LjA3NmguMDAxbC00LjkwNyAyLjcxNUMuMTE0IDIxLjg5MiAwIDIyLjA4NCAwIDIyLjI5NHY3LjQ2NWMwIC4wODYuMDQ2LjE2Ni4xMjEuMjA5LjA3NS4wNDIuMTY3LjA0Mi4yNDItLjAwMWwyLjM5OC0xLjM5M0MyLjkwOSAyOC40ODggMyAyOC4zMjkgMyAyOC4xNTd2LTQuMzkzYzAtLjA5Mi4wNS0uMTc3LjEzLS4yMjFsMi4yMzUtMS4yMzZINS4zNjVjLjA0Mi0uMDIzLjA4OC0uMDM0LjEzNS0uMDM0LjA0NyAwIC4wOTMuMDEyLjEzNS4wMzRsMi4yMzUgMS4yMzdDNy45NSAyMy41ODggOCAyMy42NzMgOCAyMy43NjV2NC4zOTNjMCAuMTcyLjA5MS4zMzEuMjQuNDE3bDIuMzk4IDEuMzkzYy4wNzUuMDQzLjE2Ny4wNDMuMjQyLjAwMUMxMC45NTQgMjkuOTI1IDExIDI5Ljg0NSAxMSAyOS43NTl2LTcuNDY0QzExIDIyLjA4NSAxMC44ODYgMjEuODkyIDEwLjcwMyAyMS43OTF6Ij48L3BhdGg+Cjwvc3ZnPg=="
+            />
+            <span>Node.Js</span>
+          </div>
+
+          <div
+            class="skill-item px-2 md:px-8 py-2 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          >
+            <img
+              class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
+              alt="svgImg"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiNmZmQ2MDAiIGQ9Ik02LDQyVjZoMzZ2MzZINnoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMDAwMDAxIiBkPSJNMjkuNTM4IDMyLjk0N2MuNjkyIDEuMTI0IDEuNDQ0IDIuMjAxIDMuMDM3IDIuMjAxIDEuMzM4IDAgMi4wNC0uNjY1IDIuMDQtMS41ODUgMC0xLjEwMS0uNzI2LTEuNDkyLTIuMTk4LTIuMTMzbC0uODA3LS4zNDRjLTIuMzI5LS45ODgtMy44NzgtMi4yMjYtMy44NzgtNC44NDEgMC0yLjQxIDEuODQ1LTQuMjQ0IDQuNzI4LTQuMjQ0IDIuMDUzIDAgMy41MjguNzExIDQuNTkyIDIuNTczbC0yLjUxNCAxLjYwN2MtLjU1My0uOTg4LTEuMTUxLTEuMzc3LTIuMDc4LTEuMzc3LS45NDYgMC0xLjU0NS41OTctMS41NDUgMS4zNzcgMCAuOTY0LjYgMS4zNTQgMS45ODUgMS45NTFsLjgwNy4zNDRDMzYuNDUyIDI5LjY0NSAzOCAzMC44MzkgMzggMzMuNTIzIDM4IDM2LjQxNSAzNS43MTYgMzggMzIuNjUgMzhjLTIuOTk5IDAtNC43MDItMS41MDUtNS42NS0zLjM2OEwyOS41MzggMzIuOTQ3ek0xNy45NTIgMzMuMDI5Yy41MDYuOTA2IDEuMjc1IDEuNjAzIDIuMzgxIDEuNjAzIDEuMDU4IDAgMS42NjctLjQxOCAxLjY2Ny0yLjA0M1YyMmgzLjMzM3YxMS4xMDFjMCAzLjM2Ny0xLjk1MyA0Ljg5OS00LjgwNSA0Ljg5OS0yLjU3NyAwLTQuNDM3LTEuNzQ2LTUuMTk1LTMuMzY4TDE3Ljk1MiAzMy4wMjl6Ij48L3BhdGg+Cjwvc3ZnPg=="
+            />
+            <span>JavaScript</span>
+          </div>
+
+          <div
+            class="skill-item px-2 md:px-8 py-2 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          >
+            <img
+              class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
+              alt="svgImg"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxyZWN0IHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgeD0iNiIgeT0iNiIgZmlsbD0iIzE5NzZkMiI+PC9yZWN0Pjxwb2x5Z29uIGZpbGw9IiNmZmYiIHBvaW50cz0iMjcuNDksMjIgMTQuMjI3LDIyIDE0LjIyNywyNS4yNjQgMTguOTg0LDI1LjI2NCAxOC45ODQsNDAgMjIuNzUzLDQwIDIyLjc1MywyNS4yNjQgMjcuNDksMjUuMjY0Ij48L3BvbHlnb24+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTM5LjE5NCwyNi4wODRjMCwwLTEuNzg3LTEuMTkyLTMuODA3LTEuMTkycy0yLjc0NywwLjk2LTIuNzQ3LDEuOTg2IGMwLDIuNjQ4LDcuMzgxLDIuMzgzLDcuMzgxLDcuNzEyYzAsOC4yMDktMTEuMjU0LDQuNTY4LTExLjI1NCw0LjU2OFYzNS4yMmMwLDAsMi4xNTIsMS42MjIsNC43MzMsMS42MjJzMi40ODMtMS42ODgsMi40ODMtMS45MiBjMC0yLjQ0OS03LjMxNS0yLjQ0OS03LjMxNS03Ljg3OGMwLTcuMzgxLDEwLjY1OC00LjQ2OSwxMC42NTgtNC40NjlMMzkuMTk0LDI2LjA4NHoiPjwvcGF0aD4KPC9zdmc+"
+            />
+            <span>TypeScript</span>
+          </div>
+          <div
+            class="skill-item px-2 md:px-8 py-2 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          >
+            <img
+              class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
+              alt="sql"
+              src="./public/sql.svg"
+            />
+            <span>SQL</span>
+          </div>
+          <div
+            class="skill-item px-2 md:px-8 py-2 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          >
+            <img
+              class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
+              alt="postgresql"
+              src="./public/icons8-postgresql.svg"
+            />
+            <span>PostgreSQL</span>
+          </div>
+          <div
+            class="skill-item px-2 md:px-8 py-2 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          >
+            <img
+              class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
+              alt="springboot"
+              src="./public/icons8-spring-boot.svg"
+            />
+            <span>SpringBoot</span>
+          </div>
+          <div
+            class="skill-item px-2 md:px-8 py-2 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          >
+            <img
+              class="h-8 w-8 grayscale transition-all duration-300 ease-in-out"
+              alt="expressjs"
+              src="./public/icons8-express-js (1).svg"
+            />
+            <span>expressJS</span>
+          </div>
+          <div
+            class="skill-item px-2 md:px-8 py-2 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          >
+            <img
+              class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
+              alt="git"
+              src="./public/icons8-git.svg"
+            />
+            <span>Git</span>
+          </div>
+          <div
+            class="skill-item px-2 md:px-8 py-2 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          >
+            <img
+              class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
+              alt="docker"
+              src="./public/icons8-docker.svg"
+            />
+            <span>Docker</span>
+          </div>
+          <div
+            class="skill-item px-2 md:px-8 py-2 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          >
+            <img
+              class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
+              alt="aws"
+              src="./public/icons8-aws.svg"
+            />
+            <span>AWS</span>
+          </div>
+          <div
+            class="skill-item px-2 md:px-8 py-2 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          >
+            <img
+              class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
+              alt="aws"
+              src="./public/icons8-css3.svg"
+            />
+            <span>CSS3</span>
+          </div>
+            <div
+            class="skill-item px-2 md:px-8 py-2 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          >
+            <img
+              class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
+              alt="aws"
+              src="./public/icons8-tailwindcss.svg"
+            />
+            <span>TailwindCSS</span>
+          </div>
+
+          <div
+          class="skill-item px-2 md:px-8 py-2 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+        >
+          <img
+            class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
+            alt="aws"
+            src="./public/icons8-bootstrap.svg"
+          />
+          <span>Bootstrap</span>
         </div>
-        <div class="px-8 py-3 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out">
-          Angular
+
         </div>
-        <div class="px-8 py-3 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out">
-          Node.js
+      </section>
+      
+      <section id="projects" class="w-full min-h-screen flex flex-col justify-center items-center p-8 bg-gray-100 text-black/80">
+        <h2 class="text-4xl md:text-6xl text-black/80 font-bold mb-12">Projects</h2>
+        <div class="flex flex-wrap justify-center items-start w-full max-w-5xl gap-6">
+          
+          <!-- Project Card 1 -->
+          <div class="w-full md:w-[45%] p-4 bg-gradient-to-b from-black/10 to-white border border-gray-300 shadow-lg rounded-2xl">
+            <div class="flex flex-col h-full">
+              <!-- Image Section (keep aspect ratio) -->
+              <div class="w-full h-5/6">
+                <img src="/public/project1.jpg" alt="autocare" class="w-full h-full object-fill rounded-xl">
+              </div>
+              <!-- Divider Line -->
+              <div class="w-full h-[1px] bg-gray-300 mt-12"></div>
+              <!-- Details Section -->
+              <div class="p-4 flex flex-row justify-between items-center">
+                <div class="flex-grow">
+                  <h3 class="text-2xl font-semibold mb-3 text-left">Project 1</h3>
+                  <p class="mb-4 text-left">Description of project 1 goes here.</p>
+                </div>
+                <div>
+                  <a href="#" class="py-2 px-4 bg-blue-600 text-white rounded-full text-sm font-semibold hover:bg-blue-700">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="w-full md:w-[45%] p-4 bg-gradient-to-b from-black/10 to-white border border-gray-300 shadow-lg rounded-xl">
+            <div class="flex flex-col h-full">
+              <!-- Image Section (keep aspect ratio) -->
+              <div class="w-full h-5/6">
+                <img src="/public/project1.jpg" alt="autocare" class="w-full h-full object-cover rounded-xl">
+              </div>
+              <!-- Divider Line -->
+              <div class="w-full h-[1px] bg-gray-300 mt-12"></div>
+              <!-- Details Section -->
+              <div class="p-4 flex flex-row justify-between items-center">
+                <div class="flex-grow">
+                  <h3 class="text-2xl font-semibold mb-3 text-left">Project 1</h3>
+                  <p class="mb-4 text-left">Description of project 1 goes here.</p>
+                </div>
+                <div>
+                  <a href="#" class="py-2 px-4 bg-blue-600 text-white rounded-full text-sm font-semibold hover:bg-blue-700">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
         </div>
-        <div class="px-8 py-3 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out">
-          Python
-        </div>
-        <div class="px-8 py-3 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out">
-          SQL
-        </div>
-        <div class="px-8 py-3 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out">
-          Git
-        </div>
-        <div class="px-8 py-3 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out">
-          Docker
-        </div>
-        <div class="px-8 py-3 border border-white/50 rounded-full text-center bg-white/10 hover:bg-white/20 transition-all duration-300 ease-in-out">
-          Tailwind CSS
-        </div>
-      </div>
-    </section>
+      </section>
     </main>
 
     <footer
-      class="bg-gray-900 shadow-gray-950 p-8 rounded-t-3xl shadow-lg text-white mt-auto hidden"
+      class="bg-gray-200 p-8 text-black/90 mt-auto"
     >
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-serif italic mb-4">Like what you see?</h2>

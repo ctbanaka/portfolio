@@ -89,7 +89,7 @@ gsap.fromTo(text.chars,
     scrollTrigger: {
       trigger: "#aboutme",
       start: "top top",
-      end: () => "+=" + text.chars.length * 40, 
+      end: () => "+=" + text.chars.length * 5, 
       scrub: true, 
       pin: true, 
       pinSpacing: true,
@@ -98,19 +98,83 @@ gsap.fromTo(text.chars,
     },
     stagger: 0.05,
     ease: "none",
-    onComplete: () => {
-      console.log("Text animation completed, section unpinned.");
-    },
+    // onComplete: () => {
+    //   console.log("Text animation completed, section unpinned.");
+    // },
   }
 );
 
-// Lenis smooth scroll integration with GSAP's ScrollTrigger
+
+
+
+
+gsap.fromTo(
+  "#skills h2", 
+  {
+    opacity: 0,
+    y: 60,
+  }, 
+  {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: "#skills",
+      start: "top 90%", 
+      toggleActions: "play none none reverse",
+      markers: false,
+    }
+  }
+);
+
+gsap.fromTo(
+  "#skills div > div", 
+  {
+    opacity: 0,
+    y: 20,
+  }, 
+  {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    stagger: 0.05,
+    scrollTrigger: {
+      trigger: "#skills",
+      start: "top 90%",
+      toggleActions: "play none none reverse",
+      markers: false,
+    }
+  }
+);
+
+const skillsContainer = document.getElementById('skills-container');
+
+skillsContainer.addEventListener('mouseover', function (event) {
+  const target = event.target.closest('.skill-item');
+  if (target) {
+    const img = target.querySelector('img');
+    if (img) {
+      img.classList.remove('grayscale');
+    }
+  }
+});
+
+skillsContainer.addEventListener('mouseout', function (event) {
+  const target = event.target.closest('.skill-item');
+  if (target) {
+    const img = target.querySelector('img');
+    if (img) {
+      img.classList.add('grayscale');
+    }
+  }
+});
+
+
+
 lenis.on('scroll', ScrollTrigger.update);
 
-// GSAP ticker to update Lenis
 gsap.ticker.add((time) => {
   lenis.raf(time * 1000);
 });
 
-// Optional: Disable GSAP's lag smoothing if needed
 gsap.ticker.lagSmoothing(0);
