@@ -120,7 +120,7 @@ gsap.fromTo(
     duration: 1,
     scrollTrigger: {
       trigger: "#skills",
-      start: "top 90%", 
+      start: "top center", 
       toggleActions: "play none none reverse",
       markers: false,
     }
@@ -137,10 +137,10 @@ gsap.fromTo(
     opacity: 1,
     y: 0,
     duration: 1,
-    stagger: 0.05,
+    stagger: 0.06,
     scrollTrigger: {
       trigger: "#skills",
-      start: "top 90%",
+      start: "top center",
       toggleActions: "play none none reverse",
       markers: false,
     }
