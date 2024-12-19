@@ -5,6 +5,7 @@ export default {
     "./**/*{.js}",
   ],
   plugins: [
+    require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),
   ],
   theme: {
@@ -16,6 +17,9 @@ export default {
         'heading': ['1.875rem', { lineHeight: '2.25rem', fontWeight: '700' }],
         'subheading': ['1.5rem', { lineHeight: '2rem', fontWeight: '500' }],
       },
+      backgroundImage:{
+        'hero':"url('./public/hero-svg-bg.svg')"
+      }
       
     }
   }

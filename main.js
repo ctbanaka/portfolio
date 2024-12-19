@@ -98,9 +98,6 @@ gsap.fromTo(text.chars,
     },
     stagger: 0.05,
     ease: "none",
-    // onComplete: () => {
-    //   console.log("Text animation completed, section unpinned.");
-    // },
   }
 );
 
@@ -169,6 +166,85 @@ skillsContainer.addEventListener('mouseout', function (event) {
   }
 });
 
+const overlay=document.querySelector('.overlay')
+
+window.addEventListener('mousemove',(e)=>{
+  const {clientX,clientY}=e;
+  const x= Math.round((clientX / window.innerWidth)*100);
+  const y= Math.round((clientY / window.innerHeight)*100);
+
+  const isTextElement = e.target.matches(' h1, span, a');
+  
+ // const clipSize= isTextElement ? "70px": "16px"
+  gsap.to(overlay,{
+    '--x':`${x}%`,
+    '--y':`${y}%`,
+    '--clip-size':clipSize,
+    duration:0.3,
+    ease:'sine.out'
+  })
+})
+
+const line1 = document.getElementById("line1");
+const line2 = document.getElementById("line2");
+const hamburgerContainer = document.getElementById("hamburger-container");
+const menu = document.getElementById("menu");
+const header = document.getElementById('header');
+
+
+let isMenuOpen = false;
+
+gsap.set(menu, { y: "-100%" });
+
+
+hamburgerContainer.addEventListener("click", () => {
+  if (!isMenuOpen) {
+
+    gsap.to(menu, {
+      duration: 0.5,
+      y: 0,
+      ease: "power2.out",
+
+    });
+
+    gsap.to(line1, {
+      duration: 0.3,
+      y: 4, 
+      rotation: 45, 
+      transformOrigin: "center center",
+      ease: "power2.out",
+    });
+    gsap.to(line2, {
+      duration: 0.3,
+      y: -4, 
+      rotation: -45, 
+      transformOrigin: "center center", 
+      ease: "power2.out",
+    });
+  } else {
+
+    gsap.to(menu, {
+      duration: 0.5,
+      y: "-100%",
+      ease: "power2.in",
+      
+    });
+
+    gsap.to(line1, {
+      duration: 0.3,
+      y: 0, 
+      rotation: 0, 
+      ease: "power2.inOut",
+    });
+    gsap.to(line2, {
+      duration: 0.3,
+      y: 0, 
+      rotation: 0, 
+      ease: "power2.inOut",
+    });
+  }
+  isMenuOpen = !isMenuOpen; 
+});
 
 
 lenis.on('scroll', ScrollTrigger.update);

@@ -22,3 +22,20 @@
     animation: gradient-text 2s ease infinite alternate;
   }
   
+
+  .overlay {
+      clip-path: circle(var(--clip-size,16px) at var(--x,50%) var(--y,50%));
+      transition: clip-path 120ms;
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+    animation: gradientMove 3s ease infinite;
+}
+
+  
