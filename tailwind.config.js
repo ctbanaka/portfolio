@@ -7,6 +7,7 @@ export default {
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),
+    require('daisyui')
   ],
   theme: {
     extend: {
@@ -18,7 +19,9 @@ export default {
         'subheading': ['1.5rem', { lineHeight: '2rem', fontWeight: '500' }],
       },
       backgroundImage:{
-        'hero':"url('./public/hero-svg-bg.svg')"
+        'hero':"url('./public/hero-svg-bg.svg')",
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+
       }
       
     }

@@ -80,7 +80,7 @@ const lenis = new Lenis()
 // });
 
 
-const text = new SplitType("#para", { types: "chars" });
+const text = new SplitType("#para", { types: "chars,lines,words" });
 
 gsap.fromTo(text.chars, 
   { opacity: 0.3 },
@@ -187,7 +187,6 @@ window.addEventListener('mousemove',(e)=>{
 
 window.addEventListener('DOMContentLoaded',()=>{
 
-  
 const line1 = document.getElementById("line1");
 const line2 = document.getElementById("line2");
 const hamburgerContainer = document.getElementById("hamburger-container");

@@ -20,7 +20,7 @@
   <body class="font-inter bg-gray-50 flex flex-col min-h-full">
     <header
       id="header"
-      class="bg-transparent backdrop-blur-lg text-white mix-blend-difference fixed top-0 left-0 right-0 z-30"
+      class="bg-transparent backdrop-blur-md text-white mix-blend-difference fixed top-0 left-0 right-0 z-30"
     >
       <nav
         class="flex flex-row justify-between items-center md:py-4 md:px-10 p-4"
@@ -265,7 +265,7 @@
       </div>
     </section>
 
-    <section
+    <!-- <section
       id="aboutme"
       class="flex justify-center items-center p-2 md:p-11 h-screen bg-gray-50"
     >
@@ -281,19 +281,40 @@
           user-friendly applications that solve real-world problems.
         </p>
       </div>
-    </section>
+    </section> -->
+
 
     <section
-      id="skills"
-      class="flex flex-col justify-center items-center gap-6 md:gap-20 min-h-screen px-6 md:p-10 bg-gray-50 text-black/90"
+    id="aboutme"
+    class="flex flex-col justify-center items-center p-2 md:p-11 min-h-screen bg-gradient-radial from-stone-900 via-stone-900 to-black"
+  >
+    <div
+      class="md:w-11/12 md:h-[90%] h-2/3 grid place-items-start shadow-lg"
     >
-      <h2 class="text-4xl md:text-6xl text-black/80 font-bold">Skills</h2>
+      <div class="uppercase tracking-wider md:text-transparent text-base mb-4">
+        About Me
+      </div>
+      <p
+        id="para"
+        class="uppercase font-semibold text-4xl md:text-6xl p-2 py-6 md:p-16 text-start text-white/90 whitespace-normal break-normal"
+      >
+        I'm a passionate fullstack developer focused on creating practical and user-friendly applications.
+      </p>
+    </div>
+  </section>
+  
+  
+    <section
+      id="skills"
+      class="flex flex-col justify-center items-center gap-6 md:gap-20 min-h-screen px-6 md:p-10 bg-[#2a2a28] text-gray-100"
+    >
+      <h2 class="text-4xl md:text-6xl text-gray-100 font-bold">Skills</h2>
       <div
         id="skills-container"
         class="self-center flex flex-row flex-wrap gap-1 md:gap-2 justify-center items-center md:px-60"
       >
         <div
-          class="skill-item px-2 md:px-8 py-2 border border-black/40 rounded-full text-center bg-gray-100 hover:bg-black/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          class="skill-item px-2 md:px-8 py-2 border rounded-full text-center border-stone-600 hover:bg-neutral-100 hover:text-stone-900 bg-stone-800 transition-all duration-300 ease-in-out flex items-center space-x-1"
         >
           <img
             class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
@@ -304,7 +325,7 @@
         </div>
 
         <div
-          class="skill-item px-2 md:px-8 py-2 border border-black/40 rounded-full text-center bg-gray-100 hover:bg-black/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          class="skill-item px-2 md:px-8 py-2 border rounded-full text-center border-stone-600 hover:bg-neutral-100 hover:text-stone-900 bg-stone-800 transition-all duration-300 ease-in-out flex items-center space-x-1"
         >
           <img
             class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
@@ -315,7 +336,7 @@
         </div>
 
         <div
-          class="skill-item px-2 md:px-8 py-2 border border-black/40 rounded-full text-center bg-gray-100 hover:bg-black/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          class="skill-item px-2 md:px-8 py-2 border rounded-full text-center border-stone-600 hover:bg-neutral-100 hover:text-stone-900 bg-stone-800 transition-all duration-300 ease-in-out flex items-center space-x-1"
         >
           <img
             class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
@@ -326,7 +347,7 @@
         </div>
 
         <div
-          class="skill-item px-2 md:px-8 py-2 border border-black/40 rounded-full text-center bg-gray-100 hover:bg-black/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          class="skill-item px-2 md:px-8 py-2 border rounded-full text-center border-stone-600 hover:bg-neutral-100 hover:text-stone-900 bg-stone-800 transition-all duration-300 ease-in-out flex items-center space-x-1"
         >
           <img
             class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
@@ -337,7 +358,7 @@
         </div>
 
         <div
-          class="skill-item px-2 md:px-8 py-2 border border-black/40 rounded-full text-center bg-gray-100 hover:bg-black/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          class="skill-item px-2 md:px-8 py-2 border rounded-full text-center border-stone-600 hover:bg-neutral-100 hover:text-stone-900 bg-stone-800 transition-all duration-300 ease-in-out flex items-center space-x-1"
         >
           <img
             class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
@@ -347,7 +368,7 @@
           <span>TypeScript</span>
         </div>
         <div
-          class="skill-item px-2 md:px-8 py-2 border border-black/40 rounded-full text-center bg-gray-100 hover:bg-black/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          class="skill-item px-2 md:px-8 py-2 border rounded-full text-center border-stone-600 hover:bg-neutral-100 hover:text-stone-900 bg-stone-800 transition-all duration-300 ease-in-out flex items-center space-x-1"
         >
           <img
             class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
@@ -357,7 +378,7 @@
           <span>SQL</span>
         </div>
         <div
-          class="skill-item px-2 md:px-8 py-2 border border-black/40 rounded-full text-center bg-gray-100 hover:bg-black/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          class="skill-item px-2 md:px-8 py-2 border rounded-full text-center border-stone-600 hover:bg-neutral-100 hover:text-stone-900 bg-stone-800 transition-all duration-300 ease-in-out flex items-center space-x-1"
         >
           <img
             class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
@@ -367,7 +388,7 @@
           <span>PostgreSQL</span>
         </div>
         <div
-          class="skill-item px-2 md:px-8 py-2 border border-black/40 rounded-full text-center bg-gray-100 hover:bg-black/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          class="skill-item px-2 md:px-8 py-2 border rounded-full text-center border-stone-600 hover:bg-neutral-100 hover:text-stone-900 bg-stone-800 transition-all duration-300 ease-in-out flex items-center space-x-1"
         >
           <img
             class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
@@ -377,7 +398,7 @@
           <span>SpringBoot</span>
         </div>
         <div
-          class="skill-item px-2 md:px-8 py-2 border border-black/40 rounded-full text-center bg-gray-100 hover:bg-black/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          class="skill-item px-2 md:px-8 py-2 border rounded-full text-center border-stone-600 hover:bg-neutral-100 hover:text-stone-900 bg-stone-800 transition-all duration-300 ease-in-out flex items-center space-x-1"
         >
           <img
             class="h-8 w-8 grayscale transition-all duration-300 ease-in-out"
@@ -387,7 +408,7 @@
           <span>expressJS</span>
         </div>
         <div
-          class="skill-item px-2 md:px-8 py-2 border border-black/40 rounded-full text-center bg-gray-100 hover:bg-black/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          class="skill-item px-2 md:px-8 py-2 border rounded-full text-center border-stone-600 hover:bg-neutral-100 hover:text-stone-900 bg-stone-800 transition-all duration-300 ease-in-out flex items-center space-x-1"
         >
           <img
             class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
@@ -397,7 +418,7 @@
           <span>Git</span>
         </div>
         <div
-          class="skill-item px-2 md:px-8 py-2 border border-black/40 rounded-full text-center bg-gray-100 hover:bg-black/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          class="skill-item px-2 md:px-8 py-2 border rounded-full text-center border-stone-600 hover:bg-neutral-100 hover:text-stone-900 bg-stone-800 transition-all duration-300 ease-in-out flex items-center space-x-1"
         >
           <img
             class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
@@ -407,7 +428,7 @@
           <span>Docker</span>
         </div>
         <div
-          class="skill-item px-2 md:px-8 py-2 border border-black/40 rounded-full text-center bg-gray-100 hover:bg-black/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          class="skill-item px-2 md:px-8 py-2 border rounded-full text-center border-stone-600 hover:bg-neutral-100 hover:text-stone-900 bg-stone-800 transition-all duration-300 ease-in-out flex items-center space-x-1"
         >
           <img
             class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
@@ -417,7 +438,7 @@
           <span>AWS</span>
         </div>
         <div
-          class="skill-item px-2 md:px-8 py-2 border border-black/40 rounded-full text-center bg-gray-100 hover:bg-black/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          class="skill-item px-2 md:px-8 py-2 border rounded-full text-center border-stone-600 hover:bg-neutral-100 hover:text-stone-900 bg-stone-800 transition-all duration-300 ease-in-out flex items-center space-x-1"
         >
           <img
             class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
@@ -427,7 +448,7 @@
           <span>CSS3</span>
         </div>
         <div
-          class="skill-item px-2 md:px-8 py-2 border border-black/40 rounded-full text-center bg-gray-100 hover:bg-black/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          class="skill-item px-2 md:px-8 py-2 border rounded-full text-center border-stone-600 hover:bg-neutral-100 hover:text-stone-900 bg-stone-800 transition-all duration-300 ease-in-out flex items-center space-x-1"
         >
           <img
             class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
@@ -438,7 +459,7 @@
         </div>
 
         <div
-          class="skill-item px-2 md:px-8 py-2 border border-black/40 rounded-full text-center bg-gray-100 hover:bg-black/20 transition-all duration-300 ease-in-out flex items-center space-x-1"
+          class="skill-item px-2 md:px-8 py-2 border rounded-full text-center border-stone-600 hover:bg-neutral-100 hover:text-stone-900 bg-stone-800 transition-all duration-300 ease-in-out flex items-center space-x-1"
         >
           <img
             class="h-8 w-10 grayscale transition-all duration-300 ease-in-out"
@@ -450,84 +471,98 @@
       </div>
     </section>
 
-    <section
-      id="projects"
-      class="w-full min-h-screen flex flex-col justify-center items-center p-8 bg-gray-100 text-black/80"
-    >
-      <h2 class="text-4xl md:text-6xl text-black/80 font-bold mb-12">
-        Projects
-      </h2>
-      <div
-        class="flex flex-wrap justify-center items-start w-full max-w-5xl gap-6"
-      >
-        <!-- Project Card 1 -->
-        <div
-          class="w-full md:w-[45%] p-4 bg-gradient-to-b from-black/10 to-white border border-gray-300 shadow-lg rounded-2xl"
-        >
-          <div class="flex flex-col h-full">
-            <!-- Image Section (keep aspect ratio) -->
-            <div class="w-full h-5/6">
-              <img
-                src="/public/project1.jpg"
-                alt="autocare"
-                class="w-full h-full object-fill rounded-xl"
-              />
-            </div>
-            <!-- Divider Line -->
-            <div class="w-full h-[1px] bg-gray-300 mt-12"></div>
-            <!-- Details Section -->
-            <div class="p-4 flex flex-row justify-between items-center">
-              <div class="flex-grow">
-                <h3 class="text-2xl font-semibold mb-3 text-left">Project 1</h3>
-                <p class="mb-4 text-left">
-                  Description of project 1 goes here.
-                </p>
+    <section class="min-h-screen p-4 md:p-8 bg-[#202020]">
+      <div class="max-w-7xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <!-- Left Project -->
+              <div class="space-y-6">
+                  <div class="mockup-browser bg-gray-100 md:w-[556px] md:h-[360px] w-full">
+                    <div class="mockup-browser-toolbar">
+                      <div class="input !bg-gray-100 border-gray-200 border">carwash system</div>
+                    </div>
+                  <div class="max-w-full mx-auto rounded-xl overflow-hidden bg-gray-100">
+                    <img 
+                        src="/project1.jpg" 
+                        alt="Project Preview" 
+                        class="w-full h-full object-fill rounded-lg"
+                       
+                    >
+                </div>
               </div>
-              <div>
-                <a
-                  href="#"
-                  class="py-2 px-4 bg-blue-600 text-white rounded-full text-sm font-semibold hover:bg-blue-700"
-                  >View</a
-                >
+                  <div class="space-y-4">
+                      <div class="flex gap-2 flex-wrap">
+                          <span class="px-4 py-1 rounded-full bg-blue-600 text-white font-medium">Side project</span>
+                          <span class="px-4 py-1 rounded-full bg-zinc-900 border border-gray-500 text-white font-medium">Angular</span>
+                          <span class="px-4 py-1 rounded-full bg-zinc-900 border border-gray-500 text-white font-medium">Java</span>
+                          <span class="px-4 py-1 rounded-full bg-zinc-900 border border-gray-500 text-white font-medium">Microservice</span>
+                      </div>
+  
+                      <div class="flex flex-row justify-between items-end w-full gap-2">
+                        <div class="space-y-2">
+                          <h2 class="text-2xl text-gray-300 md:text-4xl font-bold">
+                            Car wash
+                          </h2>
+                          <p class="text-lg md:text-xl text-gray-200 max-w-2xl">
+                            A car wash management system, featuring appointment scheduling.
+                          </p>
+                        </div>
+                        
+                        <div class="md:pr-8 mb-3">
+                          <a href="https://github.com/ctbanaka/car-wash-system" target="_blank" referrerpolicy="noreferrer" class="inline-flex items-center py-1 px-4 text-xl text-gray-100 border border-stone-500 rounded-full hover:bg-white hover:text-black transition-colors">
+                            Code
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 ml-1">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                  </div>
               </div>
-            </div>
-          </div>
-        </div>
 
-        <div
-          class="w-full md:w-[45%] p-4 bg-gradient-to-b from-black/10 to-white border border-gray-300 shadow-lg rounded-xl"
-        >
-          <div class="flex flex-col h-full">
-            <!-- Image Section (keep aspect ratio) -->
-            <div class="w-full h-5/6">
-              <img
-                src="/public/project1.jpg"
-                alt="autocare"
-                class="w-full h-full object-cover rounded-xl"
-              />
+
+              <div class="space-y-6">
+                <div class="md:w-[556px] md:h-[360px] w-full  bg-gradient-to-b from-gray-100 to-purple-50 rounded-xl">
+                <div class="max-w-full mx-auto rounded-xl overflow-hidden bg-gray-100">
+                  <img 
+                      src="/linkfiz.png" 
+                      alt="Project Preview" 
+                      class="w-full h-full object-cover rounded-lg"
+                     
+                  >
+              </div>
             </div>
-            <!-- Divider Line -->
-            <div class="w-full h-[1px] bg-gray-300 mt-12"></div>
-            <!-- Details Section -->
-            <div class="p-4 flex flex-row justify-between items-center">
-              <div class="flex-grow">
-                <h3 class="text-2xl font-semibold mb-3 text-left">Project 1</h3>
-                <p class="mb-4 text-left">
-                  Description of project 1 goes here.
-                </p>
-              </div>
-              <div>
-                <a
-                  href="#"
-                  class="py-2 px-4 bg-blue-600 text-white rounded-full text-sm font-semibold hover:bg-blue-700"
-                  >View</a
-                >
-              </div>
+                <div class="space-y-4">
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="px-4 py-1 rounded-full bg-purple-600 text-white font-medium">Project</span>
+                        <span class="px-4 py-1 rounded-full bg-zinc-900 border border-gray-500 text-white font-medium">Angular</span>
+                        <span class="px-4 py-1 rounded-full bg-zinc-900 border border-gray-500 text-white font-medium">Java</span>
+                    </div>
+
+                    <div class="flex flex-row justify-between items-end w-full gap-2">
+                      <div class="space-y-2">
+                        <h2 class="text-2xl text-gray-300 md:text-4xl font-bold">
+                          Linkfiz
+                        </h2>
+                        <p class="text-lg md:text-xl text-gray-200 max-w-2xl">
+                          Production-ready link management tool for sharing and tracking of links.
+                        </p>
+                      </div>
+                      
+                      <div class="md:pr-8 mb-3">
+                        <a href="https://linkfiz.com" target="_blank" class="inline-flex items-center py-1 px-4 text-xl text-gray-100 border border-stone-500 rounded-full hover:bg-white hover:text-black transition-colors">
+                          Visit
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 ml-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                </div>
             </div>
           </div>
-        </div>
       </div>
     </section>
+
 
     <footer id="footer" class="bg-[#2a2a28] w-full min-h-[60vh] flex flex-col justify-center items-start gap-10 px-4 md:px-20 py-12 text-yellow-50">
       <div class="text-4xl md:text-7xl font-bold">
