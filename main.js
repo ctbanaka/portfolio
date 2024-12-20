@@ -185,17 +185,18 @@ window.addEventListener('mousemove',(e)=>{
   })
 })
 
+window.addEventListener('DOMContentLoaded',()=>{
+
+  
 const line1 = document.getElementById("line1");
 const line2 = document.getElementById("line2");
 const hamburgerContainer = document.getElementById("hamburger-container");
 const menu = document.getElementById("menu");
-const header = document.getElementById('header');
-
-
-let isMenuOpen = false;
 
 gsap.set(menu, { y: "-100%" });
+menu.classList.remove('hidden')
 
+let isMenuOpen = false;
 
 hamburgerContainer.addEventListener("click", () => {
   if (!isMenuOpen) {
@@ -245,6 +246,12 @@ hamburgerContainer.addEventListener("click", () => {
   }
   isMenuOpen = !isMenuOpen; 
 });
+
+})
+
+
+
+
 
 
 lenis.on('scroll', ScrollTrigger.update);
