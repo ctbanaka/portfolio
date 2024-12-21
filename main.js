@@ -65,6 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     heroSection,
     {
       opacity: 0,
+      y:50
     },
     {
       opacity: 1,
@@ -169,7 +170,7 @@ if (!isMobile()) {
     const y = Math.round((clientY / window.innerHeight) * 100);
 
     const isTextElement = e.target.matches("h1, span, a");
-    const clipSize = isTextElement ? "100px" : "10px";
+    const clipSize = isTextElement ? "120px" : "10px";
 
     gsap.to(overlay, {
       "--x": `${x}%`,
