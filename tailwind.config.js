@@ -22,7 +22,7 @@ export default {
         'hero':"url('./public/hero-svg-bg.svg')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 
-      }
+      },
       
     }
   }

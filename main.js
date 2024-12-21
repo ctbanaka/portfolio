@@ -166,87 +166,120 @@ skillsContainer.addEventListener('mouseout', function (event) {
   }
 });
 
-const overlay=document.querySelector('.overlay')
+const isMobile = () => window.matchMedia('(max-width: 768px)').matches;
 
-window.addEventListener('mousemove',(e)=>{
-  const {clientX,clientY}=e;
-  const x= Math.round((clientX / window.innerWidth)*100);
-  const y= Math.round((clientY / window.innerHeight)*100);
-
-  const isTextElement = e.target.matches(' h1, span, a');
+if (!isMobile()) {
+  const overlay = document.querySelector('.overlay');
   
- // const clipSize= isTextElement ? "70px": "16px"
-  gsap.to(overlay,{
-    '--x':`${x}%`,
-    '--y':`${y}%`,
-    '--clip-size':clipSize,
-    duration:0.3,
-    ease:'sine.out'
-  })
-})
-
-window.addEventListener('DOMContentLoaded',()=>{
-
-const line1 = document.getElementById("line1");
-const line2 = document.getElementById("line2");
-const hamburgerContainer = document.getElementById("hamburger-container");
-const menu = document.getElementById("menu");
-
-gsap.set(menu, { y: "-100%" });
-menu.classList.remove('hidden')
-
-let isMenuOpen = false;
-
-hamburgerContainer.addEventListener("click", () => {
-  if (!isMenuOpen) {
-
-    gsap.to(menu, {
-      duration: 0.5,
-      y: 0,
-      ease: "power2.out",
-
-    });
-
-    gsap.to(line1, {
+  window.addEventListener('mousemove', (e) => {
+    const { clientX, clientY } = e;
+    const x = Math.round((clientX / window.innerWidth) * 100);
+    const y = Math.round((clientY / window.innerHeight) * 100);
+    
+    const isTextElement = e.target.matches('h1, span, a');
+    const clipSize = isTextElement ? "100px" : "10px";
+    
+    gsap.to(overlay, {
+      '--x': `${x}%`,
+      '--y': `${y}%`,
+      '--clip-size': clipSize,
       duration: 0.3,
-      y: 4, 
-      rotation: 45, 
-      transformOrigin: "center center",
-      ease: "power2.out",
+      ease: 'sine.out'
     });
-    gsap.to(line2, {
-      duration: 0.3,
-      y: -4, 
-      rotation: -45, 
-      transformOrigin: "center center", 
-      ease: "power2.out",
-    });
-  } else {
+  });
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const line1 = document.getElementById("line1");
+  const line2 = document.getElementById("line2");
+  const hamburgerContainer = document.getElementById("hamburger-container");
+  const menu = document.getElementById("menu");
+  const menuItems = document.querySelectorAll(".menu-item");
+
+  // Initial setup
+  gsap.set(menu, { y: "-100%" });
+  menu.classList.remove('hidden');
+
+  let isMenuOpen = false;
+  let isAnimating = false;  // Add this to prevent multiple animations
+
+  const closeMenu = () => {
+    if (isAnimating) return;
+    isAnimating = true;
 
     gsap.to(menu, {
       duration: 0.5,
       y: "-100%",
       ease: "power2.in",
-      
+      onComplete: () => {
+        isAnimating = false;
+        isMenuOpen = false;
+      }
+    });
+
+    gsap.to([line1, line2], {
+      duration: 0.3,
+      y: 0,
+      rotation: 0,
+      ease: "power2.inOut"
+    });
+  };
+
+  const openMenu = () => {
+    if (isAnimating) return;
+    isAnimating = true;
+
+    gsap.to(menu, {
+      duration: 0.5,
+      y: 0,
+      ease: "power2.out",
+      onComplete: () => {
+        isAnimating = false;
+        isMenuOpen = true;
+      }
     });
 
     gsap.to(line1, {
       duration: 0.3,
-      y: 0, 
-      rotation: 0, 
-      ease: "power2.inOut",
+      y: 4,
+      rotation: 45,
+      transformOrigin: "center center",
+      ease: "power2.out"
     });
+
     gsap.to(line2, {
       duration: 0.3,
-      y: 0, 
-      rotation: 0, 
-      ease: "power2.inOut",
+      y: -4,
+      rotation: -45,
+      transformOrigin: "center center",
+      ease: "power2.out"
     });
-  }
-  isMenuOpen = !isMenuOpen; 
-});
+  };
 
-})
+  hamburgerContainer.addEventListener("click", () => {
+    if (!isMenuOpen) {
+      openMenu();
+    } else {
+      closeMenu();
+    }
+  });
+
+  menuItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = item.getAttribute('href').slice(1);
+      const targetSection = document.getElementById(targetId);
+
+      if (targetSection) {
+        closeMenu();
+        setTimeout(() => {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+        }, 500);
+      }
+    });
+  });
+});
 
 
 

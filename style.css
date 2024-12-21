@@ -28,6 +28,13 @@
       transition: clip-path 120ms;
   }
 
+  @media (max-width: 768px) {
+    .overlay {
+      clip-path: none;
+      transition: none;
+    }
+  }
+
   @keyframes gradientMove {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
