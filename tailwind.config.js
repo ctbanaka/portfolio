@@ -19,7 +19,7 @@ export default {
         'subheading': ['1.5rem', { lineHeight: '2rem', fontWeight: '500' }],
       },
       backgroundImage:{
-        'hero':"url('./public/hero-svg-bg.svg')",
+        'hero':"url('./hero-svg-bg.svg')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 
       },
