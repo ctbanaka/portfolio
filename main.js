@@ -86,7 +86,7 @@ gsap.fromTo(
     opacity: 1,
     scrollTrigger: {
       trigger: "#aboutme",
-      start: "top center",
+      start: "top 35%",
       end: () => "+=" + text.chars.length * 5,
       scrub: true,
       pinSpacing: true,
